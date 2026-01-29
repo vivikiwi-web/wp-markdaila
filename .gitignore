@@ -3,10 +3,6 @@
 /node_modules
 /.srv/*
 !/.srv/custom.ini
-!/.srv/wp-content
-/.srv/wp-content/languages
-/.srv/wp-content/uploads
-/.srv/wp-content/upgrade
 
 # Theme
 theme/node_modules
