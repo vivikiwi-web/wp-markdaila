@@ -1,0 +1,47 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{ "name": "Primary", "slug": "primary", "color": "#015FB6" },
+				{
+					"name": "Neutral 100",
+					"slug": "neutral-100",
+					"color": "#0A0A0A"
+				},
+				{
+					"name": "Neutral 90",
+					"slug": "neutral-90",
+					"color": "#2C2C2A"
+				},
+				{
+					"name": "Neutral 30",
+					"slug": "neutral-30",
+					"color": "#8D8E8E"
+				},
+				{
+					"name": "Neutral 10",
+					"slug": "neutral-10",
+					"color": "#EFF1F2"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Display",
+					"slug": "display",
+					"fontFamily": "Playfair Display, serif"
+				},
+				{
+					"name": "Body",
+					"slug": "body",
+					"fontFamily": "Montserrat, sans-serif"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1168px"
+		}
+	}
+}

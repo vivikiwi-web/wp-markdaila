@@ -1,0 +1,19 @@
+/*
+Theme Name: Kiwi Theme
+Theme URI: https://markdaila.lt
+Author: Mark Daila
+Author URI: https://markdaila.lt
+Description: Custom WordPress theme for Mark Daila
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kiwi-theme
+*/
+
+body {
+	background-color: #f0f8ff;
+	color: #333333;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}

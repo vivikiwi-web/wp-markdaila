@@ -1,0 +1,11 @@
+{
+	"extends": "@wordpress/scripts/config/tsconfig.json",
+	"compilerOptions": {
+		"strict": true,
+		"jsx": "react-jsx",
+		"baseUrl": "./src"
+	},
+	"include": [
+		"src/**/*"
+	]
+}

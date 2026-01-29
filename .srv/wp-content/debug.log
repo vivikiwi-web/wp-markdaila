@@ -1,0 +1,30 @@
+[29-Jan-2026 16:39:38 UTC] PHP Warning:  require(/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php:14
+Stack trace:
+#0 /var/www/html/wp-settings.php(560): include_once()
+#1 /var/www/html/wp-config.php(139): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:39 UTC] PHP Warning:  require(/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php:14
+Stack trace:
+#0 /var/www/html/wp-settings.php(560): include_once()
+#1 /var/www/html/wp-config.php(139): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:39 UTC] PHP Warning:  require(/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/kiwi-theme/includes/wp-cleanup.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php:14
+Stack trace:
+#0 /var/www/html/wp-settings.php(560): include_once()
+#1 /var/www/html/wp-config.php(139): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 16:39:56 UTC] PHP Parse error:  syntax error, unexpected token ")" in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14

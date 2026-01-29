@@ -1,0 +1,25 @@
+.DS_Store
+/.idea
+/node_modules
+/.srv/*
+!/.srv/custom.ini
+!/.srv/wp-content
+/.srv/wp-content/languages
+/.srv/wp-content/uploads
+/.srv/wp-content/upgrade
+
+# Theme
+theme/node_modules
+theme/package-lock.json
+theme/composer-lock.json
+theme/assets/css
+theme/assets/js
+theme/assets/fonts
+
+# Plugin
+plugins/node_modules
+plugins/package-lock.json
+plugins/composer-lock.json
+plugins/build
+
+package-lock.json

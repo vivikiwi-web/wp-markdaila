@@ -1,0 +1,105 @@
+version: "3.9"
+
+services:
+    mysql:
+        image: mysql:8.0
+        platform: linux/arm64
+        container_name: markdaila-mysql
+        restart: unless-stopped
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./.srv/database:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: wordpress
+            MYSQL_DATABASE: markdaila
+            MYSQL_USER: wordpress
+            MYSQL_PASSWORD: wordpress
+            TZ: Europe/Vilnius
+        healthcheck:
+            test:
+                ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-pwordpress"]
+            interval: 5s
+            timeout: 5s
+            retries: 30
+
+    wordpress:
+        image: wordpress:latest
+        platform: linux/arm64
+        container_name: markdaila-wp
+        restart: unless-stopped
+        ports:
+            - "8000:80"
+        volumes:
+            - wp_core:/var/www/html
+            - ./.srv/wp-content:/var/www/html/wp-content:delegated
+            - ./theme:/var/www/html/wp-content/themes/kiwi-theme:delegated
+            - ./plugins:/var/www/html/wp-content/plugins/kiwi-blocks:delegated
+            - ./.srv/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+        environment:
+            WORDPRESS_DB_HOST: mysql
+            WORDPRESS_DB_USER: wordpress
+            WORDPRESS_DB_PASSWORD: wordpress
+            WORDPRESS_DB_NAME: markdaila
+            WORDPRESS_DEBUG: "1"
+            TZ: Europe/Vilnius
+            WORDPRESS_CONFIG_EXTRA: |
+                define('WP_DEBUG_LOG', true);
+                define('WP_DEBUG_DISPLAY', false);
+                @ini_set('display_errors', 0);
+        depends_on:
+            mysql:
+                condition: service_healthy
+
+    phpmyadmin:
+        image: phpmyadmin:latest
+        platform: linux/arm64
+        container_name: markdaila-pma
+        restart: unless-stopped
+        ports:
+            - "8080:80"
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+            PMA_USER: root
+            PMA_PASSWORD: wordpress
+            UPLOAD_LIMIT: 256M
+            TZ: Europe/Vilnius
+        depends_on:
+            mysql:
+                condition: service_healthy
+
+    mailpit:
+        image: axllent/mailpit:latest
+        platform: linux/arm64
+        container_name: markdaila-mailpit
+        restart: unless-stopped
+        ports:
+            - "8025:8025" # web UI
+            - "1025:1025" # SMTP
+
+    wpcli:
+        image: wordpress:cli
+        platform: linux/arm64
+        container_name: markdaila-wpcli
+        depends_on:
+            mysql:
+                condition: service_healthy
+            wordpress:
+                condition: service_started
+        volumes:
+            - wp_core:/var/www/html
+            - ./.srv/wp-content:/var/www/html/wp-content:delegated
+            - ./theme:/var/www/html/wp-content/themes/kiwi-theme:delegated
+            - ./plugins:/var/www/html/wp-content/plugins/kiwi-blocks:delegated
+        environment:
+            WORDPRESS_DB_HOST: mysql
+            WORDPRESS_DB_USER: wordpress
+            WORDPRESS_DB_PASSWORD: wordpress
+            WORDPRESS_DB_NAME: markdaila
+        entrypoint: ["sh", "-lc"]
+        command: ["sleep infinity"]
+
+volumes:
+    wp_core:
