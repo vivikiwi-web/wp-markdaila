@@ -13,6 +13,27 @@ if (!defined('ABSPATH')) exit;
  */
 require __DIR__ . '/includes/wp-cleanup.php';
 
+/**
+ * Block filters.
+ */
+require __DIR__ . '/includes/block-filters.php';
+
+/**
+ * Restrict blocks in the editor.
+ */
+add_action('enqueue_block_editor_assets', function () {
+	wp_enqueue_script(
+		'my-plugin-editor-restrict-blocks',
+		plugin_dir_url(__FILE__) . 'src/assets/js/editor.ts', // adjust path
+		['wp-blocks', 'wp-dom-ready'],
+		'1.0.0',
+		true
+	);
+});
+
+/**
+ * Register blocks.
+ */
 add_action('init', function () {
 	$blocks_dir = __DIR__ . '/build/blocks';
 

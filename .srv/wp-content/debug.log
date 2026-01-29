@@ -28,3 +28,22 @@ Stack trace:
 #5 {main}
   thrown in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
 [29-Jan-2026 16:39:56 UTC] PHP Parse error:  syntax error, unexpected token ")" in /var/www/html/wp-content/plugins/kiwi-blocks/kiwi-blocks.php on line 14
+[29-Jan-2026 17:06:34 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/plugins/kiwi-blocks/build/blocks/header/block.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 17:07:35 UTC] PHP Warning:  Undefined array key 0 in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 294
+[29-Jan-2026 17:07:35 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #1 ($search) of type array|string is deprecated in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 295
+[29-Jan-2026 17:07:35 UTC] PHP Warning:  Undefined array key 0 in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 294
+[29-Jan-2026 17:07:35 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #1 ($search) of type array|string is deprecated in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 295
+[29-Jan-2026 17:07:35 UTC] PHP Warning:  Undefined array key 0 in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 294
+[29-Jan-2026 17:07:35 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #1 ($search) of type array|string is deprecated in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-readme.php on line 295
+[29-Jan-2026 17:10:34 UTC] PHP Warning:  Undefined property: WP_Block_Template::$media in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-templates.php on line 261
+[29-Jan-2026 18:16:05 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/plugins/kiwi-blocks/build/blocks/header/block.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:16:05 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/plugins/kiwi-blocks/build/blocks/header/block.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:16:05 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/plugins/kiwi-blocks/build/blocks/header/block.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:16:05 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/plugins/kiwi-blocks/build/blocks/header/block.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:53 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:54 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:54 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:54 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:55 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:56 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131
+[29-Jan-2026 18:30:56 UTC] PHP Notice:  wp_json_file_decode(): Klaida dekoduojant JSON failą /var/www/html/wp-content/themes/kiwi-theme/theme.json: Syntax error in /var/www/html/wp-includes/functions.php on line 6131

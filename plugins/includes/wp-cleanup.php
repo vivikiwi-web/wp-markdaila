@@ -81,10 +81,10 @@ add_filter('rest_endpoints', function ($endpoints) {
  */
 function deregister_styles()
 {
-	wp_dequeue_style('wp-block-library');
-	wp_dequeue_style('wp-block-library-theme');
+	// wp_dequeue_style('wp-block-library');
+	// wp_dequeue_style('wp-block-library-theme');
 	wp_dequeue_style('classic-theme-styles');
-	wp_dequeue_style('global-styles');
+	// wp_dequeue_style('global-styles');
 }
 
 add_action('wp_print_styles', 'deregister_styles', 100);
