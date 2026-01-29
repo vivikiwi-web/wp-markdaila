@@ -59,36 +59,9 @@ Inside the theme folder, install the required dependencies:
     cd theme
     npm install
 
-## Start Development with Gulp
-
-Run Gulp inside the `theme/` folder to watch for changes in SCSS, JS, and PHP files:
-
-    gulp
-
-**This command will:**
-
-- Compile SCSS → CSS (from `./src/sass` to `./assets/css`)
-- Bundle JavaScript (from `./src/js` to `./assets/js`)
-- Copy Fonts (from `./src/fonts` to `./assets/fonts`)
-- Watch for changes and sync updates automatically using BrowserSync
-
 ## Developing the Kiwi Plugin
 
 If you are also working on the Kiwi Core plugin, navigate to the plugin/ folder and install dependencies if needed. Plugin files will be automatically mounted inside Docker under `wp-content/plugins/kiwi-core`.
-
-## Building for Production
-
-To create an optimized version of your theme, run:
-
-    gulp build
-
-This will:  
-✅ Minify CSS & JS  
-✅ Optimize images  
-✅ Copy fonts  
-✅ Prepare assets for deployment
-
-All compiled files will be placed inside the assets/ directory.
 
 ## Accessing WordPress in Docker
 
